@@ -37,6 +37,7 @@ package internal
 
 import (
 	${VarPackages}
+	"gorm.io/gorm/schema"
 )
 
 type ${VarDaoPrefixName}OrderBy struct {
@@ -69,6 +70,11 @@ func New${VarDaoClassName}(db *gorm.DB) *${VarDaoClassName} {
 	dao.model = &${VarModelPackageName}.${VarModelClassName}{}
 	dao.Columns = ${VarDaoVariableName}Columns
 	dao.TableName = "${VarTableName}"
+	if tabler, ok := interface{}(dao.model).(schema.Tabler); ok {
+		if tableName := tabler.TableName(); tableName != "" {
+			dao.TableName = tableName
+		}
+	}
 	dao.Database = db
 
 	return dao
