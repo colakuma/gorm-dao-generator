@@ -25,7 +25,7 @@ func usage() {
 	fmt.Fprintf(os.Stderr, "Usage of gorm-dao-generator:\n")
 	fmt.Fprintf(os.Stderr, "\tgorm-dao-generator [flags] -model-dir=. -model-names=M[:t],M[:t] -dao-dir=./dao\n")
 	fmt.Fprintf(os.Stderr, "For more information, see:\n")
-	fmt.Fprintf(os.Stderr, "\thttps://github.com/dobyte/gorm-dao-generator\n")
+	fmt.Fprintf(os.Stderr, "\thttps://github.com/colakuma/gorm-dao-generator\n")
 	fmt.Fprintf(os.Stderr, "Flags:\n")
 	flag.PrintDefaults()
 }

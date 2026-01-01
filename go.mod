@@ -1,4 +1,4 @@
-module github.com/dobyte/gorm-dao-generator
+module github.com/colakuma/gorm-dao-generator
 
 go 1.23.0
 

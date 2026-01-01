@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/dobyte/gorm-dao-generator/template"
+	"github.com/colakuma/gorm-dao-generator/template"
 	"golang.org/x/tools/go/packages"
 )
 

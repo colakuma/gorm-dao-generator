@@ -5,8 +5,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/dobyte/gorm-dao-generator/example/dao"
-	"github.com/dobyte/gorm-dao-generator/example/model"
+	"github.com/colakuma/gorm-dao-generator/example/dao"
+	"github.com/colakuma/gorm-dao-generator/example/model"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )

@@ -1,7 +1,7 @@
 package dao
 
 import (
-	"github.com/dobyte/gorm-dao-generator/example/dao/internal"
+	"github.com/colakuma/gorm-dao-generator/example/dao/internal"
 	"gorm.io/gorm"
 )
 
